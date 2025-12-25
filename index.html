@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurora Borealis Countdown</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="aurora-canvas"></canvas>
+    <canvas id="particles-canvas"></canvas>
+    
+    <div class="container">
+        <h1>✨ Cosmic Countdown ✨</h1>
+        <p class="subtitle">Time Until the Magic Begins</p>
+        
+        <div id="countdown">
+            <div class="time-unit">
+                <span class="time-value" id="days">00</span>
+                <span class="time-label">Days</span>
+            </div>
+            <div class="time-unit">
+                <span class="time-value" id="hours">00</span>
+                <span class="time-label">Hours</span>
+            </div>
+            <div class="time-unit">
+                <span class="time-value" id="minutes">00</span>
+                <span class="time-label">Minutes</span>
+            </div>
+            <div class="time-unit">
+                <span class="time-value" id="seconds">00</span>
+                <span class="time-label">Seconds</span>
+            </div>
+        </div>
+
+        <div id="celebration">🎉 The Moment Has Arrived! 🎊</div>
+
+        <div class="date-picker">
+            <label>Choose Your Event:</label>
+            <input type="datetime-local" id="eventDate">
+            <button onclick="setCountdown()">Start Countdown</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
